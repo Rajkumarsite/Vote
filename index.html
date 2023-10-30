@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Online voting system </title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "poppins",sans-serif;
+            align-items: ;
+        }
+        .card_image1{
+            position: relative;
+            height: 140px;
+            width: 140px;
+            border-radius: 50%;
+            background-color: white;
+            padding: 0px;
+        }
+        .card_image1 .card_img1{
+            height: 140px;
+            width: 140px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 3px solid white;
+
+        }
+        body{
+            min-height:;
+            display: ;
+            align-items: ;
+            justify-content: ;
+            background-color: teal;
+           
+      
+        }
+        .card1{
+            border-radius: 15px;
+            background-color: #fff;
+            flex-direction: row;
+            background-size: contain;
+            
+        }
+        .slide_content1{
+            margin: 0px 100px;
+        }
+        .image_content1,card_content1{
+            padding: 10px 14px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+        .image_content1{
+            position: relative;
+            row-gap: 5px;
+        }
+        .card_content1 .name1,.card_content1 .name1{
+            font-size: 20px;
+            text-align: center;
+            font-family: serif;
+        }
+        .description1{
+            font-size: 15px;
+            font-family:serif;
+            text-align: center;
+            color: black;
+        }
+        .button1{
+            border: none;
+            font-size: 16px;
+            color: white;
+            padding: 8px 16px;
+            background-color:  #4070f4;
+            border: radius 6px;
+            align-items: center;
+            margin: 14px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+
+        }
+        .button1 button1:hover{
+            background: black;
+        }
+   
+        .overlay1{
+            position:absolute;
+            height: 100%;
+            width:100%;
+            background-color: #4070f4;
+            left: 0;
+            top:0;
+            border-radius: 10px 10px 0 25px;
+
+
+        }
+     
+        .slide_container1{
+            height:100px;
+            width: 100%;
+            background-color: teal;
+            padding: 0px 0;
+        }
+
+        header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+.result h1{
+
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+     
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Online Voting System</h1>
+    </header><br><br><br>
+
+    
+    <div class="slide_container1">
+        <div class="slide_content1">
+            <div class="card_wrapper1">
+                <div class="card1">
+                    <div class="image_content1">
+                        <span class="overlay1">
+
+                        </span>
+                        <div class="card_image1">
+                            <img src="Android.png" class="card_img1">
+
+                        </div>
+                    </div>
+                    <div class="card_content1">
+                        <h2 class="name1">   Android</h2>
+                        <p class="description1">Android is a mobile operating system based on a modified version of the linux kernel and other open-source software designed primarily for touchscreen mobile devices such as smartphones and tables</p>
+                        <button class="button1" onclick="castVote()">Vote ID=1</button>
+                    </div>
+                </div>
+
+                <pre><br><br><br></pre>
+                <div class="card1">
+                    <div class="image_content1">
+                        <span class="overlay1">
+
+                        </span>
+                        <div class="card_image1">
+                            <img src="Kalilinux.jpeg" class="card_img1">
+
+                        </div>
+                    </div>
+                    <div class="card_content1">
+                        <h2 class="name1">   Kali linux</h2>
+                        <p class="description1">Kali Linux (formerly known as BackTrack Linux) is an open-source, Debian-based Linux distribution aimed at advanced Penetration Testing and Security Auditing. and is called kali linux</p>
+                        <button class="button1" onclick="castVote()">Vote ID=2</button>
+                    </div>
+                </div>
+
+
+                <pre><br><br><br></pre>
+                <div class="card1">
+                    <div class="image_content1">
+                        <span class="overlay1">
+
+                        </span>
+                        <div class="card_image1">
+                            <img src="Windows.jpeg" class="card_img1">
+
+                        </div>
+                    </div>
+                    <div class="card_content1">
+                        <h2 class="name1">   Windows</h2>
+                        <p class="description1">Windows is an operating system designed by Microsoft. The operating system is what allows you to use a computer. Windows comes preloaded on most new personal computers (PCs)</p>
+                        <button class="button1" onclick="castVote()">Vote ID=3</button>
+                    </div>
+                </div>
+
+
+                <pre><br><br><br></pre>
+                <div class="card1">
+                    <div class="image_content1">
+                        <span class="overlay1">
+
+                        </span>
+                        <div class="card_image1">
+                            <img src="Macos.jpeg" class="card_img1">
+
+                        </div>
+                    </div>
+                    <div class="card_content1">
+                        <h2 class="name1">   Mac OS</h2>
+                        <p class="description1">MacOS is the computer operating system (OS) for Apple desktops and laptops. It is a proprietary graphical OS that powers every Mac and  is called mac os .it is most widely used for users</p>
+                      
+                        <button class="button1" onclick="castVote()">Vote ID=4</button>
+                    </div>
+                </div>
+
+                <pre><br><br><br></pre>
+                
+                 
+                       
+                        <main>
+                            <div class="candidates" id="candidates">
+                                <!-- Candidate cards will be dynamically added here -->
+                            </div>
+                        
+                          
+                        
+                                          
+                            <button class="button1" onclick="showResults()">Show Candidate results</button>
+                        
+                        
+                    
+                            <div id="results" style="display: none; margin-top: 20px;">
+                                <h2>Results</h2>
+                                <div id="candidateResults">
+                                    <!-- Result details will be dynamically added here -->
+                                </div>
+                            </div>
+                        </main>
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    
+   
+
+
+    
+
+
+
+
+
+<script>
+
+
+let candidates = [
+    { id: 1,name:'Android',votes: 0},
+    { id: 2,name:'Kali Linux',votes: 0},
+    { id: 3,name:'Windows',votes: 0},
+    { id: 4,name:'MAC OS',votes: 0}
+];
+
+function createCandidateCards() {
+    const candidatesContainer = document.getElementById('candidates');
+
+    candidates.forEach(candidate => {
+        const card = document.createElement('div');
+        card.className = 'candidate';
+        card.setAttribute('data-id', candidate.id);
+        card.innerText = candidate.name;
+        card.onclick = () => selectCandidate(candidate.id);
+
+        candidatesContainer.appendChild(card);
+    });
+}
+
+function selectCandidate(candidateId) {
+    // Highlight selected candidate (you can add visual feedback)
+    const selectedCard = document.querySelector(`.candidate[data-id="${candidateId}"]`);
+    alert(`You selected ${selectedCard.innerText}`);
+}
+
+function castVote() {
+    const selectedCandidateId = parseInt(prompt("Enter the ID of the candidate you want to vote for:"));
+
+    // Validate the input (for simplicity, assuming valid input in this example)
+    const selectedCandidate = candidates.find(candidate => candidate.id === selectedCandidateId);
+
+    if (selectedCandidate) {
+        selectedCandidate.votes++;
+        alert('Vote cast successfully!');
+
+        // Save the updated votes to local storage
+        localStorage.setItem('candidates', JSON.stringify(candidates));
+    } else {
+        alert('Invalid candidate ID.');
+    }
+}
+
+function showResults() {
+    const resultsContainer = document.getElementById('results');
+    const candidateResultsContainer = document.getElementById('candidateResults');
+
+   candidateResultsContainer.innerHTML = ''; // Clear previous results
+
+    candidates.forEach(candidate => {
+        const resultDetail = document.createElement('div');
+        resultDetail.innerText = `${candidate.name}: ${candidate.votes} votes`;
+        candidateResultsContainer.appendChild(resultDetail);
+    });
+
+    resultsContainer.style.display = 'block';
+}
+
+
+
+// Initialization
+const storedCandidates = localStorage.getItem('candidates');
+
+if (storedCandidates) {
+    candidates = JSON.parse(storedCandidates);
+} else {
+    localStorage.setItem('candidates', JSON.stringify(candidates));
+}
+
+
+
+//
+
+</script>
+
+
+</body>
+
+</html>
